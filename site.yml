@@ -1,0 +1,27 @@
+---
+- name: dynamic dns using ydns
+  hosts: all
+  become: yes
+
+  tasks:
+    - name: install dependencies
+      community.general.pkgng:
+          name:
+            - curl
+            - bash
+          state: latest
+
+    - name: create updater script
+      ansible.builtin.template:
+        src: updater.sh.j2
+        dest: /root/updater.sh
+        owner: root
+        group: wheel
+        mode: '0700'
+
+    - name: add crontab for updater script
+      ansible.builtin.cron:
+        name: ydns updater
+        minute: "0"
+        hour: "*/1"
+        job: /root/updater.sh

@@ -1,0 +1,17 @@
+---
+plugin: google.cloud.gcp_compute
+
+projects:
+    - <PROJECT_ID>
+
+auth_kind: application
+
+zones:
+    - us-central1-a
+
+filters:
+    - labels.os = "freebsd" AND labels.ydns_host = "yes"
+
+keyed_groups:
+    - prefix: gcp
+      key: metadata

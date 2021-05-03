@@ -1,0 +1,4 @@
+ansible_user: freebsd
+
+ydns_user: <ydns_login_username>
+ydns_password: <ydns_login_password>

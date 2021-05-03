@@ -1,0 +1,4 @@
+ssh/google
+ssh/google.pub
+inventory/group_vars/all.yml
+inventory/google.gcp_compute.yml
