@@ -5,6 +5,14 @@ The Ansible playbook in this repository installs and periodically runs a [bash s
 The playbook assumes the instance runs in Google Cloud using the terraform scripts below,
 * [https://github.com/k3karthic/terraform__gcloud-instance](https://github.com/k3karthic/terraform__gcloud-instance).
 
+## Requirements
+
+Install the following Ansible modules before running the playbook,
+```
+ansible-galaxy collection install google.cloud
+ansible-galaxy collection install community.general
+```
+
 ## Dynamic Inventory
 
 This playbook uses the Google [Ansible Inventory Plugin](https://docs.ansible.com/ansible/latest/collections/google/cloud/gcp_compute_inventory.html) to populate public FreeBSD instances dynamically.
