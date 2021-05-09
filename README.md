@@ -26,7 +26,7 @@ Public instances with a YDNS hostname are assumed to have a label `ydns_host: ye
     1. specify the zone where you have deployed your server on Google Cloud.
     1. Configure the authentication
 1. Set username and ssh authentication in `inventory/group_vars/
-1. Set username and password for YDNS in `inventory/group_vars/all.yml` using the sample `inventory/group_vars/all.yml.sample`.
+1. Set username and password for YDNS in `inventory/group_vars/ydns.yml` using the sample `inventory/group_vars/ydns.yml.sample`.
 
 ## Deployment
 
