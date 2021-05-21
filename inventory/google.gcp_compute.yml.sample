@@ -1,5 +1,5 @@
 ---
-plugin: google.cloud.gcp_compute
+plugin: gcp_compute
 
 projects:
     - <PROJECT_ID>

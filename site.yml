@@ -1,15 +1,15 @@
 ---
 - name: dynamic dns using ydns
   hosts: all
-  become: yes
+  become: true
 
   tasks:
     - name: install dependencies
       community.general.pkgng:
-          name:
-            - curl
-            - bash
-          state: latest
+        name:
+          - curl
+          - bash
+        state: latest
 
     - name: create updater script
       ansible.builtin.template:
