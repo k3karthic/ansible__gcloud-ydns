@@ -25,7 +25,9 @@ ansible-galaxy collection install google.cloud
 
 The Google [Ansible Inventory Plugin](https://docs.ansible.com/ansible/latest/collections/google/cloud/gcp_compute_inventory.html) populates public FreeBSD instances.
 
-The target FreeBSD instances must have the label `yidns_host: yes` and a metadata entry `ydns_host: <hostname>`.
+The target FreeBSD instances must have the following,
+* Label — `yidns_host: yes`
+* Metadata entry — `ydns_host: <hostname>`
 
 ## Playbook Configuration
 
