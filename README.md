@@ -1,4 +1,4 @@
-# Ansible - Dynamic DNS using YDNS
+# Ansible — Dynamic DNS using YDNS
 
 This playbook runs a [bash script](https://github.com/k3karthic/bash-updater/tree/gcloud) which sends the public IP of an instance on Oracle Cloud to [YDNS](https://ydns.io/).
 
@@ -34,7 +34,7 @@ The target FreeBSD instances must have the label `yidns_host: yes` and a metadat
     1. Specify the zone where you have deployed your server on Google Cloud
     1. Configure the authentication
 1. Set username and ssh authentication in `inventory/group_vars/
-1. Set username and password for YDNS in `inventory/group_vars/ydns.yml` using the sample `inventory/group_vars/ydns.yml.sample`.
+1. Set username and password for YDNS in `inventory/group_vars/ydns.yml`. Use `inventory/group_vars/ydns.yml.sample` as a reference.
 
 ## Deployment
 
