@@ -2,9 +2,9 @@
 
 This playbook creates a bash script from the following fork. The script sends the public IP of an instance on Google Cloud to [YDNS](https://ydns.io/). A [Cron](https://en.wikipedia.org/wiki/Cron) job runs the script once every hour.
 * GitHub: [github.com/k3karthic/bash-updater/tree/gcloud](https://github.com/k3karthic/bash-updater/tree/gcloud)
-* Codeberg: [codeberg.org/k3karthic/bash-updater/tree/gcloud](https://codeberg.org/k3karthic/bash-updater/src/branch/gcloud)
+* Codeberg: [codeberg.org/k3karthic/bash-updater/src/branch/gcloud](https://codeberg.org/k3karthic/bash-updater/src/branch/gcloud)
 
-**Assumption:** The instance runs in Google Cloud using the script below,
+**Assumption:** Instance deployed using the Terraform script below,
 - terraform__gcloud-instance
     - GitHub: [github.com/k3karthic/terraform__gcloud-instance](https://github.com/k3karthic/terraform__gcloud-instance)
     - Codeberg: [codeberg.org/k3karthic/terraform__gcloud-instance](https://codeberg.org/k3karthic/terraform__gcloud-instance)
@@ -27,8 +27,8 @@ ansible-galaxy collection install google.cloud
 
 The Google [Ansible Inventory Plugin](https://docs.ansible.com/ansible/latest/collections/google/cloud/gcp_compute_inventory.html) populates public FreeBSD instances.
 
-The target FreeBSD instances must have the following,
-* Label — `yidns_host: yes`
+All target FreeBSD instances must have the following,
+* Label — `ydns_host: yes`
 * Metadata entry — `ydns_host: <hostname>`
 
 ## Playbook Configuration
