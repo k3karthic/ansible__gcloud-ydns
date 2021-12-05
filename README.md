@@ -4,7 +4,7 @@ This playbook creates a bash script from the following fork. The script sends th
 * GitHub: [github.com/k3karthic/bash-updater/tree/gcloud](https://github.com/k3karthic/bash-updater/tree/gcloud)
 * Codeberg: [codeberg.org/k3karthic/bash-updater/tree/gcloud](https://codeberg.org/k3karthic/bash-updater/src/branch/gcloud)
 
-**Assumption:** Create an instance using one of the Terraform scripts below,
+**Assumption:** The instance runs in Google Cloud using the script below,
 * terraform__gcloud-instance
 	* GitHub: [github.com/k3karthic/terraform__gcloud-instance](https://github.com/k3karthic/terraform__gcloud-instance)
 	* Codeberg: [codeberg.org/k3karthic/terraform__gcloud-instance](https://codeberg.org/k3karthic/terraform__gcloud-instance)
