@@ -1,6 +1,6 @@
 # Ansible — Dynamic DNS using YDNS
 
-This playbook creates a [bash script](https://github.com/k3karthic/bash-updater/tree/gcloud) which sends the public IP of an instance on Oracle Cloud to [YDNS](https://ydns.io/). The bash script is run once every hour using [Cron](https://en.wikipedia.org/wiki/Cron).
+This playbook creates a [bash script](https://github.com/k3karthic/bash-updater/tree/gcloud) which sends the public IP of an instance on Oracle Cloud to [YDNS](https://ydns.io/). A [Cron](https://en.wikipedia.org/wiki/Cron) job runs the script once every hour.
 
 **Assumption:** Create an instance using one of the Terraform scripts below,
 * terraform__gcloud-instance
